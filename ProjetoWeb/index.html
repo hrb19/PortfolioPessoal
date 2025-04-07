@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Conexão com o CSS -->
+</head>
+
+<body>
+
+    <header>
+        <h1>Henrique Rodrigues</h1>
+        <p>Analista de Sistemas</p>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Mim</h2>
+        <p>Atualmente trabalho como Analista de Suporte de um sistema ERP, sou apaixonado por jogos, culinária, futebol
+            e animes. <br>
+            Meu principal hobby é cozinhar, levo como uma terapia, uma forma de relaxar.<br>
+        </p>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projetos de Interesse</h2>
+        <p class="section-description">
+            Abaixo são apenas os projetos que tenho interesse em dar continuidade no desenvolvimento.<br>
+            Obs: Esses projetos atualmente não estão disponíveis no git, mas em breve pretendo adicionar.
+        </p>
+        <div class="project-gallery">
+
+            <!-- Projeto 1: Sistema de Gestão para Bibliotecas -->
+            <article class="project-card">
+                <img src="image/login.jpg" alt="Sistema de Gestão para Bibliotecas">
+                <img src="image/cadastro.jpg" alt="Sistema de Gestão para Bibliotecas">
+                <h3>Sistema de Gestão para Bibliotecas</h3>
+                <p>Uma plataforma para gerenciar cadastros para Bibliotecas, <br>
+                    incluindo cadastro de funcionários, de livros, clientes, etc...</p>
+                <a href="#" onclick="alert('Em desenvolvimento!')" class="disabled-link">Em breve</a>
+            </article>
+
+            <!-- Projeto 2: Administrador de Notícias -->
+            <article class="project-card">
+                <img src="image/LoginNoticia.jpg" alt="Administrador de Notícias">
+                <img src="image/EscreverNoticia.jpg" alt="Administrador de Notícias">
+                <h3>Sistema para Administrar Notícias</h3>
+                <p>Aplicativo Android para postagem de notícias,<br>
+                    permite a postagem de notícias podendo informar título, texto, data e autor.
+                </p>
+                <a href="#" onclick="alert('Em desenvolvimento!')" class="disabled-link">Em breve</a>
+            </article>
+
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <form class="contact-form">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+        <script src="script.js"></script> <!-- Conexão com o JavaScript -->
+</body>
+
+</html>
